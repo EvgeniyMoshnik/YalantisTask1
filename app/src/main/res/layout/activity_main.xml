@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.evgeniy.yalantistask1.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/colorBackground">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView style="@style/TextViewTitle"
+                android:textColor="@color/black"
+                android:text="@string/Municipal"
+                android:id="@+id/textView1"
+                android:layout_marginBottom="@dimen/view_margin" />
+
+            <TextView style="@style/TextView"
+                android:text="@string/Status"
+                android:background="@color/colorBackgroundText"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/view_margin"
+                android:id="@+id/textView2" />
+
+            <View style="@style/LineView" />
+
+
+            <FrameLayout style="@style/FrameLayout">
+
+                <TextView style="@style/TextView"
+                    android:text="@string/Created"
+                    android:id="@+id/textView3" />
+
+                <TextView style="@style/TextViewRight"
+                    android:text="@string/Date_Created"
+                    android:id="@+id/textView4" />
+            </FrameLayout>
+
+
+            <View style="@style/LineView" />
+
+
+            <FrameLayout style="@style/FrameLayout">
+
+                <TextView style="@style/TextView"
+                    android:text="@string/Registered"
+                    android:id="@+id/textView5" />
+
+                <TextView style="@style/TextViewRight"
+                    android:text="@string/Date_Registered"
+                    android:id="@+id/textView6" />
+            </FrameLayout>
+
+
+            <View style="@style/LineView" />
+
+
+            <FrameLayout style="@style/FrameLayout">
+
+                <TextView style="@style/TextView"
+                    android:text="@string/MakeUp"
+                    android:id="@+id/textView7" />
+
+                <TextView style="@style/TextViewRight"
+                    android:text="@string/Date_MakeUp"
+                    android:id="@+id/textView8" />
+            </FrameLayout>
+
+
+            <View style="@style/LineView" />
+
+
+            <FrameLayout style="@style/FrameLayout">
+
+                <TextView style="@style/TextView"
+                    android:text="@string/Responsible"
+                    android:id="@+id/textView9" />
+
+                <TextView style="@style/TextViewRight"
+                    android:text="@string/Responsible_Name"
+                    android:id="@+id/textView10" />
+            </FrameLayout>
+
+
+            <View style="@style/LineView" />
+
+
+            <TextView style="@style/TextView"
+                android:text="@string/Description"
+                android:id="@+id/textView11"
+                android:layout_marginTop="@dimen/view_margin"
+                android:layout_marginBottom="@dimen/view_margin"
+                android:textColor="@color/black"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

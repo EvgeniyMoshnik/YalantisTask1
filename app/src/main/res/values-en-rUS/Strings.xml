@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YalantisTask1</string>
+    <string name="Municipal">Municipal economy</string>
+    <string name="Status">In work</string>
+    <string name="Created">Created</string>
+    <string name="Date_Created">02 25 2016</string>
+    <string name="Registered">Registered</string>
+    <string name="Date_Registered">02 26 2016</string>
+    <string name="MakeUp">Make up</string>
+    <string name="Date_MakeUp"> 02 26  2016</string>
+    <string name="Responsible">Responsible</string>
+    <string name="Responsible_Name">Dnepropetrovsk MVK()</string>
+    <string name="Description">Open the trapdoor (near the billboard), District of turn of the 18th and 19th trams at Prospect Mira from Donetsk highway</string>
+</resources>

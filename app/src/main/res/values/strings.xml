@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YalantisTask1</string>
+    <string name="Municipal">Комунальне господарство</string>
+    <string name="Status">В роботі</string>
+    <string name="Created">Створено</string>
+    <string name="Date_Created">25 лютого 2016</string>
+    <string name="Registered">Зареєстровано</string>
+    <string name="Date_Registered">26 лютого 2016</string>
+    <string name="MakeUp">Вирішити до</string>
+    <string name="Date_MakeUp">26 лютого 2016</string>
+    <string name="Responsible">Відповідальний</string>
+    <string name="Responsible_Name">Дніпропетровський МВК()</string>
+    <string name="Description">Відкритий люк (біля рекламного щита), район повороту 18-го і 19-го трамваїв на проспекті Миру з Донецького шосе</string>
+</resources>
