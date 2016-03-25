@@ -35,9 +35,9 @@
         <item name="android:clickable">true</item>
     </style>
 
-    <style name="LineView">
+    <style name="DividerView">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/height_line</item>
+        <item name="android:layout_height">@dimen/height_dividerView</item>
         <item name="android:background">@color/grey</item>
     </style>
 
