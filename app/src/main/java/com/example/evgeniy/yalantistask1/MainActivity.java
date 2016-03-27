@@ -9,12 +9,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+//[Comment] Bad design, wrongs colors
+//[Comment] wrong text size.
+//[Comment] Bad paddings
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar mToolbar;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
+    private RecyclerView.LayoutManager mLayoutManager; //[Comments] All these objects should be local
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

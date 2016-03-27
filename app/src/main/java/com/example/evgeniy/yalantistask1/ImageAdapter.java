@@ -28,8 +28,8 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
     }
 
     public ImageAdapter(Context context, String[] mUrlArray) {
-        this.mContext = context;
-        this.mUrlArray = mUrlArray;
+        this.mContext = context; //[Comment] without this
+        this.mUrlArray = mUrlArray; //[Comment] without this
     }
 
     @Override
@@ -41,7 +41,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Picasso.with(mContext).load(mUrlArray[position]).resize(650, 450).centerCrop().into(holder.mImageView);
+        Picasso.with(mContext).load(mUrlArray[position]).resize(650, 450).centerCrop().into(holder.mImageView); //[Comment] Magic numbers
     }
 
 
