@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView.Adapter mAdapter = new ImageAdapter(this, getResources().getStringArray(R.array.urlArray));
         mRecyclerView.setAdapter(mAdapter);
-
     }
 
     // Back button close application
@@ -52,6 +51,4 @@ public class MainActivity extends AppCompatActivity {
         String toastMessage = v.getClass().getSimpleName();
         Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show();
     }
-
-
 }

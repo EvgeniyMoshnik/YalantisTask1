@@ -3,7 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="padding_top_bottom">14dp</dimen>
+    <dimen name="padding_top_bottom">12dp</dimen>
 
     <dimen name="height_dividerView">1dp</dimen>
     <dimen name="height_recycler">170dp</dimen>
