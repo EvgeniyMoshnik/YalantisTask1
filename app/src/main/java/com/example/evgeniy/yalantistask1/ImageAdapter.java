@@ -11,6 +11,7 @@ import com.squareup.picasso.Picasso;
 
 /**
  * Created by Evgeniy
+ * Make adapter for RecyclerView
  */
 public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> {
 
@@ -27,9 +28,9 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
         }
     }
 
-    public ImageAdapter(Context context, String[] mUrlArray) {
-        this.mContext = context;
-        this.mUrlArray = mUrlArray;
+    public ImageAdapter(Context context, String[] urlArray) {
+        mContext = context;
+        mUrlArray = urlArray;
     }
 
     @Override
@@ -41,7 +42,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Picasso.with(mContext).load(mUrlArray[position]).resize(650, 450).centerCrop().into(holder.mImageView);
+        Picasso.with(mContext).load(mUrlArray[position]).error(R.drawable.no_photo_available).into(holder.mImageView);
     }
 
 

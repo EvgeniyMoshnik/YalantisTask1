@@ -11,31 +11,31 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Toolbar mToolbar;
-    private RecyclerView mRecyclerView;
-    private RecyclerView.Adapter mAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle(R.string.app_name);
-        mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
         setSupportActionBar(mToolbar);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+        setRecyclerView();
+    }
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+    // Initialize RecyclerView
+    public void setRecyclerView() {
+        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mRecyclerView.setHasFixedSize(true);
 
-        mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new ImageAdapter(this, getResources().getStringArray(R.array.urlArray));
+        RecyclerView.Adapter mAdapter = new ImageAdapter(this, getResources().getStringArray(R.array.urlArray));
         mRecyclerView.setAdapter(mAdapter);
+
     }
 
     // Back button close application
@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
     // onClick for views
     public void toastShow(View v) {
-        String toastMess = v.getClass().getSimpleName();
-        Toast.makeText(this, toastMess, Toast.LENGTH_SHORT).show();
+        String toastMessage = v.getClass().getSimpleName();
+        Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show();
     }
 
 

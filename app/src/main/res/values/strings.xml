@@ -9,8 +9,8 @@
     <string name="MakeUp">Вирішити до</string>
     <string name="Date_MakeUp">26 лютого 2016</string>
     <string name="Responsible">Відповідальний</string>
-    <string name="Responsible_Name">Дніпропетровський МВК()</string>
-    <string name="Description">Відкритий люк (біля рекламного щита), район повороту 18-го і 19-го трамваїв на проспекті Миру з Донецького шосе</string>
+    <string name="Responsible_Name">Дніпропетровський МВК( )</string>
+    <string name="Description">Відкритий люк (біля рекламного щита), район повороту 18-го і 19-го трамваїв на проспекті Миру з Донецького шосе.</string>
     <string-array name="urlArray">
         <item>http://gorod.dp.ua/photo/usergorod/2016/03/24/100409.jpg</item>
         <item>http://gorod.dp.ua/photo/usergorod/2016/03/20/100339.jpg</item>

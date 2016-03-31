@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context="com.example.evgeniy.yalantistask1.MainActivity"
     android:orientation="vertical"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    android:focusableInTouchMode="true">
 
     <include
         layout="@layout/toolbar"/>
@@ -14,9 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingTop="@dimen/activity_vertical_margin">
+        android:paddingRight="@dimen/activity_horizontal_margin">
 
         <LinearLayout
             android:orientation="vertical"
@@ -24,17 +23,18 @@
             android:layout_height="wrap_content">
 
             <TextView style="@style/TextViewTitle"
-                android:textColor="@color/black"
+                android:textColor="@color/textBlack"
                 android:text="@string/Municipal"
                 android:id="@+id/communal_services"
-                android:layout_marginBottom="@dimen/view_margin"
+                android:layout_marginTop="@dimen/padding_top_bottom"
+                android:layout_marginBottom="@dimen/padding_top_bottom"
                 android:onClick="toastShow"/>
 
             <TextView style="@style/TextView"
                 android:text="@string/Status"
                 android:background="@drawable/process_shape"
-                android:textColor="@color/white"
-                android:layout_marginBottom="@dimen/view_margin"
+                android:textColor="@color/textWhite"
+                android:layout_marginBottom="@dimen/padding_top_bottom"
                 android:id="@+id/textInWorking"
                 android:onClick="toastShow"/>
 
@@ -111,16 +111,17 @@
             <TextView style="@style/TextView"
                 android:text="@string/Description"
                 android:id="@+id/problem_description"
-                android:layout_marginTop="@dimen/view_margin"
-                android:layout_marginBottom="@dimen/view_margin"
-                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/padding_top_bottom"
+                android:layout_marginBottom="@dimen/padding_top_bottom"
+                android:textColor="@color/textBlack"
                 android:onClick="toastShow"/>
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/my_recycler_view"
+                android:id="@+id/recycler_view"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scrollbars="horizontal" />
+                android:scrollbars="horizontal"
+                android:layout_marginBottom="@dimen/padding_top_bottom" />
 
         </LinearLayout>
     </ScrollView>

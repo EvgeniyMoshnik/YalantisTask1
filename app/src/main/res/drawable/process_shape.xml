@@ -2,11 +2,11 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/colorBackgroundText"/>
     <padding
-        android:top="@dimen/shape_padding"
-        android:bottom="@dimen/shape_padding"
-        android:left="@dimen/shape_padding"
-        android:right="@dimen/shape_padding"/>
+        android:top="@dimen/shape_padding_top_bottom"
+        android:bottom="@dimen/shape_padding_top_bottom"
+        android:left="@dimen/shape_padding_left_right"
+        android:right="@dimen/shape_padding_left_right"/>
 
     <corners
-        android:radius="20dp"/>
+        android:radius="@dimen/corner_radius"/>
 </shape>

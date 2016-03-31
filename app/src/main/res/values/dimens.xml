@@ -3,12 +3,17 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <dimen name="view_margin">15dp</dimen>
-    <dimen name="height_dividerView">1dp</dimen>
+    <dimen name="padding_top_bottom">14dp</dimen>
 
-    <dimen name="text_size_title">24dp</dimen>
+    <dimen name="height_dividerView">1dp</dimen>
+    <dimen name="height_recycler">180dp</dimen>
+    <dimen name="width_recycler">120dp</dimen>
+    <dimen name="margin_recycler">10dp</dimen>
+
+    <dimen name="text_size_title">18dp</dimen>
     <dimen name="text_size">15dp</dimen>
 
-    <dimen name="margin">1dp</dimen>
-    <dimen name="shape_padding">7dp</dimen>
+    <dimen name="shape_padding_top_bottom">5dp</dimen>
+    <dimen name="shape_padding_left_right">15dp</dimen>
+    <dimen name="corner_radius">20dp</dimen>
 </resources>
